@@ -41,11 +41,11 @@ For example, [this one](http://try.github.io/).
 
 ### Install Docker
 
-TODO ...
+https://docs.docker.com/install/
 
 ### Do the Docker Hello World tutorial
 
-Work through these four tutorials on designing and building schematic, boards, and parts in Eagle:
+https://docs.docker.com/get-started/
 
 TODO ...
 
