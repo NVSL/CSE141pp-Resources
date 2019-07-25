@@ -47,15 +47,28 @@ https://docs.docker.com/install/
 
 https://docs.docker.com/get-started/
 
-TODO ...
+Take a screenshot of the output of the '''docker run hello-world''' step of the tutorial.
 
 ### Running the Course Instrumentation Script Locally
 
-TODO ...
+Fork a copy of the starter repo on Github.
+
+Git clone the forked repo locally (```git clone https://github.com/username/CSE141pp_Introduction-to-the-Development-Environment```).
+
+Run the default instrumentation script locally with __TODO__```command```.
+
+Take a screenshot of the output of the instrumentation script.
 
 ### Running the Course Instrumentation Script in the Cloud
 
-TODO ...
+Log into Gradescope. 
+
+Make a submission to the assigment "Lab 0 Introduction to the Development Environment" using the newly forked repo.
+
+Review the output of the autograder. The autograde will run a more detailed version of the instrumentation script.
+
+Compare this output with the output of the local insturmentation script.
+
 
 ## Turn in Your Work
 Write up pdf will be submitted through Gradescope.
