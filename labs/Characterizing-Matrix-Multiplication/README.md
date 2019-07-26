@@ -12,9 +12,9 @@ Skills to Learn
 
 1. Use the class instrumentation tools to change processor speed
 2. Use the class instrumentation tools to change compiler options
-3. Measure static and dynamic instruction mixes
-4. Measure program runtime
-5. Measure program energy usage
+3. Measure program runtime
+4. Measure program energy usage
+5. (possibly) Measure static and dynamic instruction mixes
 
 
 ## Software You Will Need
