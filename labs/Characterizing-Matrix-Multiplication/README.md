@@ -21,21 +21,76 @@ Skills to Learn
 
 ## Tasks to Perform
 
-### -O0 vs -O3
+### Setup
 
-TODO ...
+Fork the starter repo for this lab.
+
 
 ### Run the Stater Code Locally and Verify the Output
 
-TODO ...
+Run the command ```TODO command``` to compile and run the starter repo with no modifications.
+
+Verify that the program completes without any errors by inspecting the file ```submission/code.out```.
+Also inspect the file ```submission/code-stats.csv``` to verify the output of the local insturmentation scripts.
+
+
+### -O0 vs -O3
+
+
+#### -O0
+Modify the file ```TODO filename``` to add the option ```-O0```.
+This tells the compiler to do no optimizations when compiling.
+
+Commit the change to your forked repo and submit to Gradescope.
+
+Save a copy of the output of the autograder in your repo with the filename ```O0_output.txt```.
+
+
+#### -O3
+
+Modify the file ```TODO filename``` to add the option ```-O3```.
+This tells the compiler to optimize the program for speed.
+```-O3``` is the default optimization mode and specifying it explicity is optional.
+
+Commit the change to your forked repo and submit to Gradescope.
+
+Save a copy of the output of the autograder in your repo with the filename ```O3_output.txt```.
+
 
 ### Running at 1 GHz
 
-TODO ...
+Modify the file ```TODO filename``` to add the option ```TODO speed option for about 1GHz```.
+This option limits the processor to a clock frequency of about 1GHz when the program is run.
+Not specifying a speed option
 
-### Running at 3 GHz
+Commit the changes to your forked repo and submit to Gradescope.
 
-TODO ...
+Save a copy of the output of the autograder in your repo with the filename ```1GHz_output.txt```.
+
+
+
+### Running at 2 GHz
+
+Modify the file ```TODO filename``` to add the option ```TODO speed option for about 2GHz```.
+This option limits the processor to a clock frequency of about 2GHz when the program is run.
+
+Commit the changes to your forked repo and submit to Gradescope.
+
+Save a copy of the output of the autograder in your repo with the filename ```2GHz_output.txt```.
+
+
+### Varying Input Size
+
+Change the ```SIZE``` definition in ```lab_files/main.cpp``` to ```1024```.
+Commit the changes to your forked repo and submit to Gradescope. Save the output as ```1k_output.txt```.
+
+
+Change the ```SIZE``` definition in ```lab_files/main.cpp``` to ```10240```.
+Commit the changes to your forked repo and submit to Gradescope. Save the output as ```10k_output.txt```.
+
+
+Change the ```SIZE``` definition in ```lab_files/main.cpp``` to ```20480```.
+Commit the changes to your forked repo and submit to Gradescope. Save the output as ```20k_output.txt```.
 
 
 ## Turn in Your Work
@@ -49,5 +104,11 @@ We will look at your repo and code.
 
 Checklist:
 
-1. 
-
+1. ```O0_output.txt``` commited to repo (1pt)
+2. ```O3_output.txt``` commited to repo (1pt)
+3. ```1GHz_output.txt``` commited to repo (1pt)
+4. ```2GHz_output.txt``` commited to repo (1pt)
+5. ```1k_output.txt``` commited to repo (1pt)
+6. ```10k_output.txt``` commited to repo (1pt)
+7. ```20k_output.txt``` commited to repo (1pt)
+5. Answer question in write up "lab1.pdf" and submit to Gradescope (5 pts)
