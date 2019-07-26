@@ -1,6 +1,10 @@
 # Characterizing Matrix Multiplication
 
-To be completed on your own.
+In this lab you will run the same matrix multiplication code that you ran in Lab 0.
+This code computes the matrix dot product of two square matrices of the same size.
+This time you will gather data while you vary compiler options, processor setting, and input size.
+
+This lab will be completed on your own.
 
 Check the course schedule for due date(s).
 
