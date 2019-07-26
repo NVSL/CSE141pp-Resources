@@ -1,6 +1,10 @@
 # Introduction to the Development Environment
 
-To be completed on your own. Complete this lab in the first week is necessary for passing the course.
+In this lab you set up the lab environment and learn how gather information about programs using the course tools.
+
+The program you will be measuring computes the matrix dot product of two square matrices of the same size.
+
+This lab will be completed on your own. Complete this lab in the first week is necessary for passing the course.
 
 Check the course schedule for due date(s).
 
