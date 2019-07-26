@@ -111,4 +111,4 @@ Checklist:
 5. ```1k_output.txt``` commited to repo (1pt)
 6. ```10k_output.txt``` commited to repo (1pt)
 7. ```20k_output.txt``` commited to repo (1pt)
-5. Answer question in write up "lab1.pdf" and submit to Gradescope (5 pts)
+5. Answer question in write up and submit to Gradescope (5 pts)
