@@ -92,5 +92,5 @@ Checklist:
 3. Output file of instrumentation script local run (commited to your repo as ```local_output.txt```) (1 pt)
 4. Screenshot of instrumentation script successfully run in the cloud (1 pt)
 5. Output file of instrumentation script cloud run (commited to your repo as ```reference_processor_output.txt```) (1 pt)
-6. Complete "lab0.pdf" and submit to Gradescope (5 pts)
+6. Complete and submit to Gradescope (5 pts)
 
