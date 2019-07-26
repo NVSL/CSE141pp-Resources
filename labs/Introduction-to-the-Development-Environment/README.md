@@ -47,7 +47,7 @@ https://docs.docker.com/install/
 
 https://docs.docker.com/get-started/
 
-Take a screenshot of the output of the '''docker run hello-world''' step of the tutorial.
+Take a screenshot of the command line output of the '''docker run hello-world''' step of the tutorial.
 
 ### Running the Course Instrumentation Script Locally
 
@@ -57,17 +57,23 @@ Git clone the forked repo locally (```git clone https://github.com/username/CSE1
 
 Run the default instrumentation script locally with __TODO__```command```.
 
-Take a screenshot of the output of the instrumentation script.
+Take a screenshot of the command line output of the insturmentation script.
+
+Save output file of the instrumentation script as ```local_output.txt``` and commit it to your lab repo fork.
 
 ### Running the Course Instrumentation Script in the Cloud
 
 Log into Gradescope. 
 
-Make a submission to the assigment "Lab 0 Introduction to the Development Environment" using the newly forked repo.
+Make a submission to the Gradescope assigment "Lab 0 Introduction to the Development Environment" using the newly forked repo.
 
 Review the output of the autograder. The autograde will run a more detailed version of the instrumentation script.
 
-Compare this output with the output of the local insturmentation script.
+Compare this output with the output of the local instrumentation script.
+
+Save output file of the 
+
+script as ```reference_processor_output.txt``` and commit it to your lab repo fork.
 
 
 ## Turn in Your Work
@@ -83,8 +89,8 @@ Checklist:
 
 1. Screenshot of Docker "Hello World" tutorial completed (1 pt)
 2. Screenshot of instrumentation script successfully run locally (1 pt)
-3. Output file of instrumentation script local run (1 pt)
+3. Output file of instrumentation script local run (commited to your repo as ```local_output.txt```) (1 pt)
 4. Screenshot of instrumentation script successfully run in the cloud (1 pt)
-5. Output file of instrumentation script cloud run (1 pt)
-6. Answer question prompts in write up "lab0.pdf" (5 pts)
+5. Output file of instrumentation script cloud run (commited to your repo as ```reference_processor_output.txt```) (1 pt)
+6. Complete "lab0.pdf" and submit to Gradescope (5 pts)
 
