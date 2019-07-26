@@ -57,7 +57,7 @@ Git clone the forked repo locally (```git clone https://github.com/username/CSE1
 
 Run the default instrumentation script locally with __TODO__```command```.
 
-Take a screenshot of the command line output of the insturmentation script.
+Take a screenshot of the command line output of the instrumentation script.
 
 Save output file of the instrumentation script as ```local_output.txt``` and commit it to your lab repo fork.
 
