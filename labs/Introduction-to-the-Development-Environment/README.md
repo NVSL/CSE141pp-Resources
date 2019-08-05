@@ -83,7 +83,7 @@ devonmerrill/cse141l-development-environment
 ```
 You might want to save this as a script for easy reuse. If you didn't clone the repo into your Unix home directory, you will have to change this command.
 
-This will start the Docker container in interactive mode (`-i`) and give you access to a terminal (`-t`).
+This will start the Docker image (devonmerrill/cse141l-development-environment) in a container in interactive mode (`-i`) and give you access to a terminal (`-t`).
 
 The lab repo will be mounted in the container at `/runner/CSE141pp_Introduction-to-the-Development-Environment`.
 
