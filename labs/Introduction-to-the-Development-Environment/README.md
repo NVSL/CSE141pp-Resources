@@ -49,6 +49,8 @@ For example, [this one](http://try.github.io/).
 
 https://docs.docker.com/install/
 
+If you are using Windows, you may want to use  [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) or use [Docker Toolbox](https://docs.docker.com/toolbox/toolbox_install_windows/).
+
 ### Do the Docker Hello World tutorial
 
 https://docs.docker.com/get-started/
@@ -79,7 +81,7 @@ docker run -it \
 --volume ~/CSE141pp-Introduction-to-the-Development-Environment:/runner/CSE141pp-Introduction-to-the-Development-Environment \
 devonmerrill/cse141l-development-environment
 ```
-You might want to save this as a script for easy reuse.
+You might want to save this as a script for easy reuse. If you didn't clone the repo into your Unix home directory, you will have to change this command.
 
 This will start the Docker container in interactive mode (`-i`) and give you access to a terminal (`-t`).
 
