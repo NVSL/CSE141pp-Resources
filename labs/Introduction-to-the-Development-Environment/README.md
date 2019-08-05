@@ -57,7 +57,7 @@ Take a screenshot of the command line output of the `docker run hello-world` ste
 
 ### Get a Copy of the Starter Code
 
-Fork a copy of the starter repo on Github.
+Fork a copy of the [starter repo](https://github.com/NVSL/CSE141pp-Lab-Introduction-to-the-Development-Environment.git) on Github.
 
 Git clone the forked repo locally (`git clone https://github.com/username/CSE141pp-Introduction-to-the-Development-Environment`).
 
