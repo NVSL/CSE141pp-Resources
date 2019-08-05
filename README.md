@@ -20,7 +20,7 @@ The goals for the course are for you to learn how to test, profile, and optimize
 
 ## Labs 
 
-There are 10 labs.  Deadlines are on the course homepage.
+There are 7 labs.  Deadlines are on the course homepage.
 
 The slides for each lab are in the directory with the lab description.
 
