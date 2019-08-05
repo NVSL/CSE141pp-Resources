@@ -51,13 +51,13 @@ https://docs.docker.com/install/
 
 https://docs.docker.com/get-started/
 
-Take a screenshot of the command line output of the '''docker run hello-world''' step of the tutorial.
+Take a screenshot of the command line output of the `docker run hello-world` step of the tutorial.
 
 ### Get a Copy of the Starter Code
 
 Fork a copy of the starter repo on Github.
 
-Git clone the forked repo locally (```git clone https://github.com/username/CSE141pp_Introduction-to-the-Development-Environment```).
+Git clone the forked repo locally (`git clone https://github.com/username/CSE141pp_Introduction-to-the-Development-Environment`).
 
 There are two folder containing code in this repo.
 - lab files: Code that you will not modify. This contains `main()`, a function that will call and test your code.
@@ -72,8 +72,11 @@ Before building the code, you must start the development environment Docker cont
 You will want to mount your repo as a volume in the container using the --volume option.
 
 The full command to start the Docker container looks something like this: 
+
 `docker run -it \
+
 --volume ~/CSE141pp_Introduction-to-the-Development-Environment:/runner/CSE141pp_Introduction-to-the-Development-Environment \
+
 devonmerrill/cse141l-development-environment`
 
 This will start the Docker container in interactive mode (`-i`) and give you access to a terminal (`-t`).
