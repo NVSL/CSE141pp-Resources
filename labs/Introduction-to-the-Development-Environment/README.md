@@ -73,9 +73,11 @@ You will want to mount your repo as a volume in the container using the --volume
 
 The full command to start the Docker container looks something like this: 
 
-`docker run -it \`
-`--volume ~/CSE141pp-Introduction-to-the-Development-Environment:/runner/CSE141pp-Introduction-to-the-Development-Environment \`
-`devonmerrill/cse141l-development-environment`
+```
+docker run -it \
+--volume ~/CSE141pp-Introduction-to-the-Development-Environment:/runner/CSE141pp-Introduction-to-the-Development-Environment \
+devonmerrill/cse141l-development-environment
+```
 
 This will start the Docker container in interactive mode (`-i`) and give you access to a terminal (`-t`).
 
