@@ -53,31 +53,60 @@ https://docs.docker.com/get-started/
 
 Take a screenshot of the command line output of the '''docker run hello-world''' step of the tutorial.
 
-### Running the Course Instrumentation Script Locally
+### Get a Copy of the Starter Code
 
 Fork a copy of the starter repo on Github.
 
 Git clone the forked repo locally (```git clone https://github.com/username/CSE141pp_Introduction-to-the-Development-Environment```).
 
-Run the default instrumentation script locally with __TODO__```command```.
+There are two folder containing code in this repo.
+- lab files: Code that you will not modify. This contains `main()`, a function that will call and test your code.
+- submission: Code that you will modify. This contains some functions called by `main()`.
 
-Take a screenshot of the command line output of the instrumentation script.
+There is also a Makefile in submission that you will use to build the code. You should not modify the Makefile.
 
-Save output file of the instrumentation script as ```local_output.txt``` and commit it to your lab repo fork.
+### Test the Starter Code Locally
+
+Before building the code, you must start the development environment Docker container (devonmerrill/cse141l-development-environment).
+
+You will want to mount your repo as a volume in the container using the --volume option.
+
+The full command to start the Docker container looks something like this: 
+`docker run -it \
+--volume ~/CSE141pp_Introduction-to-the-Development-Environment:/runner/CSE141pp_Introduction-to-the-Development-Environment \
+devonmerrill/cse141l-development-environment`
+
+This will start the Docker container in interactive mode (`-i`) and give you access to a terminal (`-t`).
+
+The lab repo will be mounted in the container at `/runner/CSE141pp_Introduction-to-the-Development-Environment`.
+
+Navigate to `/runner/CSE141pp_Introduction-to-the-Development-Environment/submission` and run `make`.
+This will build the starter code.
+
+You can run the starter code binary which is named `code.exe`.
+
+### Modify the Starter Code
+
+Open up `code.c` and modify it to print your name when called. Don't forget the `\n`.
+
+Make and run the code again.
+
+Push your changes to Github.
+- `git add code.c`,
+- `git commit -m 'added a printf'`,
+- `git push`
 
 ### Running the Course Instrumentation Script in the Cloud
 
+The Gradescope autograder is able to run some detailed tests on your code on our reference processor (Intel E3-1578L Skylake). In this lab we will measure execution time and energy.
+
 Log into Gradescope. 
 
-Make a submission to the Gradescope assigment "Lab 0 Introduction to the Development Environment" using the newly forked repo.
+Make a submission to the Gradescope assigment "Lab 0 Introduction to the Development Environment" using your newly forked repo.
 
-Review the output of the autograder. The autograde will run a more detailed version of the instrumentation script.
+Review the output of the autograder.
 
-Compare this output with the output of the local instrumentation script.
-
-Save output file of the 
-
-script as ```reference_processor_output.txt``` and commit it to your lab repo fork.
+There are several outputs. Save and commit `submission/code-stats.csv` from the autograder to your repo as `submission/reference-code-stats.csv`.
 
 
 ## Turn in Your Work
@@ -95,6 +124,6 @@ Checklist:
 2. Screenshot of instrumentation script successfully run locally (1 pt)
 3. Output file of instrumentation script local run (commited to your repo as ```local_output.txt```) (1 pt)
 4. Screenshot of instrumentation script successfully run in the cloud (1 pt)
-5. Output file of instrumentation script cloud run (commited to your repo as ```reference_processor_output.txt```) (1 pt)
+5. Output file of instrumentation script cloud run (commited to your repo as `submission/reference-code-stats.csv`) (1 pt)
 6. Complete and submit to Gradescope (5 pts)
 
