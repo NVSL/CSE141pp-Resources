@@ -78,6 +78,7 @@ docker run -it \
 --volume ~/CSE141pp-Introduction-to-the-Development-Environment:/runner/CSE141pp-Introduction-to-the-Development-Environment \
 devonmerrill/cse141l-development-environment
 ```
+You might want to save this as a script for easy reuse.
 
 This will start the Docker container in interactive mode (`-i`) and give you access to a terminal (`-t`).
 
