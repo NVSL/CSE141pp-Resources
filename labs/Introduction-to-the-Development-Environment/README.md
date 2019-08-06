@@ -27,8 +27,7 @@ Skills to Learn
 
 ### Fill Out The Self Evaluation
 
-Login to your __@ucsd.edu__ gmail account and fill out [this survey](https://docs.google.com/forms/d/e/1FAIpQLSdQUSYqeVwWctQFrhxXlkQcSutsKWHhTrDdQEa1bowX4tQbWQ/viewform).  You will receive
-a copy of your responses via email.  Print it to a pdf and include it in your repo as `survey.pdf`.
+Login to your __@ucsd.edu__ gmail account and fill out [this survey](https://docs.google.com/forms/d/e/1FAIpQLSdQUSYqeVwWctQFrhxXlkQcSutsKWHhTrDdQEa1bowX4tQbWQ/viewform). You do not need to do this again if you already filled it out for CSE 141.
 
 ### Get set up Github
 
@@ -38,8 +37,6 @@ You and your teammates will commit your work to the repo in order to turn it in.
 
 First, you'll need to authorize github classroom to access your github account. 
 To do that, visit https://classroom.github.com and sign in with your github account.
-
-Then click on the link for the starter repo listed in the "Software You Will Need" section above. (Not able to verify this!)
 
 We will be using Github a lot in class. 
 If you aren't familiar with it, there are a bunch of good introductory tutorials. 
@@ -135,8 +132,7 @@ We will look at your repo and code.
 
 Checklist:
 
-1. `survey.pdf` in repo (1 pt)
-2. Output of Docker "Hello World" tutorial (commited to your repo as `docker-hello-world.txt`) (1 pt)
-3. Output file of starter code local run (commited to your repo as `submission/starter-output.txt`) (1 pt)
-4. Output file of instrumentation script cloud run (commited to your repo as `submission/reference-code-stats.csv`) (1 pt)
+1. Output of Docker "Hello World" tutorial (commited to your repo as `docker-hello-world.txt`) (1 pt)
+2. Output file of starter code local run (commited to your repo as `submission/starter-output.txt`) (1 pt)
+3. Output file of instrumentation script cloud run (commited to your repo as `submission/reference-code-stats.csv`) (1 pt)
 
