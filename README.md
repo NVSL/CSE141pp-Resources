@@ -7,9 +7,8 @@ the lab write ups and several resources you will use throughout the
 course.
 
 * `labs` has all the labs.  The write ups reference the starter repos they use.
-* `slides` has the slides.
 
-Please see the course home page (url here) for schedule, due dates, and other logistical issues.
+Please see the course home page (piazza.com/ucsd/summer2019/cse141lb) for schedule, due dates, and other logistical issues.
 
 
 ## Overview
