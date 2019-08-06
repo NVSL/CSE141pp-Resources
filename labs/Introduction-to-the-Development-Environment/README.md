@@ -59,9 +59,9 @@ Take a screenshot of the command line output of the `docker run hello-world` ste
 
 ### Get a Copy of the Starter Code
 
-Fork a copy of the [starter repo](https://github.com/NVSL/CSE141pp-Lab-Introduction-to-the-Development-Environment.git) on Github.
+First, accept the assignement on Github Classroom: https://classroom.github.com/a/XwRB7jHX
 
-Git clone the forked repo locally (`git clone https://github.com/username/CSE141pp-Introduction-to-the-Development-Environment`).
+This will set you up with a copy of the starter repository.
 
 There are two folder containing code in this repo.
 - lab files: Code that you will not modify. This contains `main()`, a function that will call and test your code.
