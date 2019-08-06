@@ -60,6 +60,8 @@ First, accept the assignement on Github Classroom: https://classroom.github.com/
 
 This will set you up with a copy of the starter repository.
 
+`git clone` your repo locally.
+
 There are two folder containing code in this repo.
 - lab files: Code that you will not modify. This contains `main()`, a function that will call and test your code.
 - submission: Code that you will modify. This contains some functions called by `main()`.
