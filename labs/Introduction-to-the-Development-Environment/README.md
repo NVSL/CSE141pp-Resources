@@ -27,7 +27,7 @@ Skills to Learn
 
 ### Fill Out The Self Evaluation
 
-Login to your __@ucsd.edu__ gmail account and fill out [this survey]().  You will receive
+Login to your __@ucsd.edu__ gmail account and fill out [this survey](https://docs.google.com/forms/d/e/1FAIpQLSdQUSYqeVwWctQFrhxXlkQcSutsKWHhTrDdQEa1bowX4tQbWQ/viewform).  You will receive
 a copy of your responses via email.  Print it to a pdf and include it in your repo as `survey.pdf`.
 
 ### Get set up Github
@@ -122,7 +122,7 @@ Review the output of the autograder.
 
 There are several outputs. Save and commit `submission/code-stats.csv` from the autograder to your repo as `submission/reference-code-stats.csv`. This is a comma-seperated-values (CSV) file with some information about how the program ran.
 
-Don't worry about the points reported on Gradescope. We are only using the autograder to gather the data in `code-stats.csv`.
+Don't worry about the points reported on Gradescope by the autograder. We are only using the autograder to gather the data in `code-stats.csv`.
 
 
 ## Turn in Your Work
@@ -135,8 +135,8 @@ We will look at your repo and code.
 
 Checklist:
 
+1. `survey.pdf` in repo (1 pt)
 1. Output of Docker "Hello World" tutorial (commited to your repo as `docker-hello-world.txt`) (1 pt)
 2. Output file of starter code local run (commited to your repo as `submission/starter-output.txt`) (1 pt)
 3. Output file of instrumentation script cloud run (commited to your repo as `submission/reference-code-stats.csv`) (1 pt)
-4. Complete and submit to Gradescope (5 pts)
 
