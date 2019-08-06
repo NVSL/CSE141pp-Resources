@@ -77,7 +77,7 @@ You will want to mount your repo as a volume in the container using the --volume
 The full command to start the Docker container looks something like this:
 ```
 docker run -it \
---volume ~/CSE141pp-Introduction-to-the-Development-Environment:/runner/CSE141pp-Introduction-to-the-Development-Environment \
+--volume ~/lab-0-intro-to-the-development-environment-djmerrill:/runner/lab-0-intro-to-the-development-environment-djmerrill \
 devonmerrill/cse141l-development-environment
 ```
 You might want to save this as a script for easy reuse. If you didn't clone the repo into your Unix home directory, you will have to change this command.
