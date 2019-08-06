@@ -136,7 +136,7 @@ We will look at your repo and code.
 Checklist:
 
 1. `survey.pdf` in repo (1 pt)
-1. Output of Docker "Hello World" tutorial (commited to your repo as `docker-hello-world.txt`) (1 pt)
-2. Output file of starter code local run (commited to your repo as `submission/starter-output.txt`) (1 pt)
-3. Output file of instrumentation script cloud run (commited to your repo as `submission/reference-code-stats.csv`) (1 pt)
+2. Output of Docker "Hello World" tutorial (commited to your repo as `docker-hello-world.txt`) (1 pt)
+3. Output file of starter code local run (commited to your repo as `submission/starter-output.txt`) (1 pt)
+4. Output file of instrumentation script cloud run (commited to your repo as `submission/reference-code-stats.csv`) (1 pt)
 
