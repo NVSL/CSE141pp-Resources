@@ -1,8 +1,7 @@
 # Characterizing Matrix Multiplication
 
-In this lab you will run the same matrix multiplication code that you ran in Lab 0.
-This code computes the matrix dot product of two square matrices of the same size.
-This time you will gather data while you vary compiler options, processor setting, and input size.
+This code computes the matrix product of two square matrices of the same size.
+This time you will gather data enery and execution time data while you for various processor setting and input size.
 
 This lab will be completed on your own.
 
@@ -11,15 +10,15 @@ Check the course schedule for due date(s).
 Skills to Learn
 
 1. Use the class instrumentation tools to change processor speed
-2. Use the class instrumentation tools to change compiler options
-3. Measure program runtime
-4. Measure program energy usage
-5. (possibly) Measure static and dynamic instruction mixes
+2. Measure program runtime
+3. Measure program energy usage
+4. Calculate power and anwser other questions using gathered data
+5. Make good graphs from gathered data
 
 
 ## Software You Will Need
 
-1. A computer with Docker installed (either the basement CSE labs, or your own laptop).
+1. A computer with Docker installed (either the cloud docker container via ssh, or your own laptop).
 2. The [starter repo]() for this lab (Don't clone it until the start of class, last minute changes are likely).
 3. The contents of the class materials Github repo: https://github.com/NVSL/CSE141pp_Resources
 
@@ -29,90 +28,68 @@ Skills to Learn
 
 Fork the starter repo for this lab.
 
-
 ### Run the Stater Code Locally and Verify the Output
 
-Run the command ```TODO command``` to compile and run the starter repo with no modifications.
+First, accept the assignement on Github Classroom: https://classroom.github.com/a/XwRB7jHX
 
-Verify that the program completes without any errors by inspecting the file ```submission/code.out```.
-Also inspect the file ```submission/code-stats.csv``` to verify the output of the local insturmentation scripts.
+This will set you up with a copy of the starter repository.
 
+`git clone` your repo locally.
 
-### -O0 vs -O3
+There are two folder containing code in this repo.
+- lab files: Code that you will not modify. This contains `main()`, a function that will call and test your code.
+- submission: Code that does most of the computation via the `sqmm()` function. You will not modify the code for this lab.
 
-
-#### -O0
-Modify the file ```TODO filename``` to add the option ```-O0```.
-This tells the compiler to do no optimizations when compiling.
-
-Commit the change to your forked repo and submit to Gradescope.
-
-Save a copy of the output of the autograder in your repo with the filename ```O0_output.txt```.
+There is also a Makefile in submission that you will use to build the code. You should not modify the Makefile.
 
 
-#### -O3
+### Test the Starter Code Locally
 
-Modify the file ```TODO filename``` to add the option ```-O3```.
-This tells the compiler to optimize the program for speed.
-```-O3``` is the default optimization mode and specifying it explicity is optional.
+As you did in Lab 0, navigate to the clone of your repo while inside the course development environment docker image.
 
-Commit the change to your forked repo and submit to Gradescope.
+In the `submission` directory, run make. This should produce `code.exe` as you saw in Lab 0.
 
-Save a copy of the output of the autograder in your repo with the filename ```O3_output.txt```.
+Take a look at `lab.make` in the root of the repo. This is the make file used when your repo is run on the reference processor. It indicates the command line arguments that will be passed during the reference run:
+`CMD_LINE_ARGS=--engine papi --stat PAPI_L2_STM --stat rapl:::PACKAGE_ENERGY:PACKAGE0 --mat-small 96 --mat-large 768 --iterations 5`.
+
+These arguments are parsed by `lab_files/main.cpp`.
+
+Run a single execution of `code.exe` with command line arguments to run 10 iterations of matrix multiply on two 32x32, 64x64, and 128x128 matricies. Save the ouput as `local-output.txt` in the root of your repo and commit and push the file.
 
 
 ### Running at 1 GHz
 
-Modify the file ```TODO filename``` to add the option ```TODO speed option for about 1GHz```.
-This option limits the processor to a clock frequency of about 1GHz when the program is run.
-Not specifying a speed option
+Take a look at the file `config` in the root of the repo.
 
-Commit the changes to your forked repo and submit to Gradescope.
+This file let you change how the code will be built and run on the reference processor.
 
-Save a copy of the output of the autograder in your repo with the filename ```1GHz_output.txt```.
+Change the MHz option to `1000` and commit and push the change.
 
+Now submit your repo to the Gradescope autograder to run on the reference processor.
 
-
-### Running at 2 GHz
-
-Modify the file ```TODO filename``` to add the option ```TODO speed option for about 2GHz```.
-This option limits the processor to a clock frequency of about 2GHz when the program is run.
-
-Commit the changes to your forked repo and submit to Gradescope.
-
-Save a copy of the output of the autograder in your repo with the filename ```2GHz_output.txt```.
+Save, commit, and push the output of `submission/code-stats.csv` as `1000-MHz-stats.csv` in the root of your repo.
 
 
-### Varying Input Size
+### Gathering Data
 
-Change the ```SIZE``` definition in ```lab_files/main.cpp``` to ```1024```.
-Commit the changes to your forked repo and submit to Gradescope. Save the output as ```1k_output.txt```.
-
-
-Change the ```SIZE``` definition in ```lab_files/main.cpp``` to ```10240```.
-Commit the changes to your forked repo and submit to Gradescope. Save the output as ```10k_output.txt```.
+Rerun the code at 1200 MHz, 1400 MHz, 1600 MHz, and 1800 MHz.
+Make sure you save the output of `submission/code-stats.csv` at each speed. You will use this data in the lab write up.
 
 
-Change the ```SIZE``` definition in ```lab_files/main.cpp``` to ```20480```.
-Commit the changes to your forked repo and submit to Gradescope. Save the output as ```20k_output.txt```.
+### Complete the Write Up
 
+The write up template is in you repo as `lab-1-write-up.pdf`.
 
 ## Turn in Your Work
 Write up pdf will be submitted through Gradescope.
 
 Also, create a GitHub Tag for your repository once you’ve done the final commits. 
-Enter this detail in the submission under “Tag”.
 We will look at your repo and code.
 
 ### Rubric
 
 Checklist:
 
-1. ```O0_output.txt``` commited to repo (1pt)
-2. ```O3_output.txt``` commited to repo (1pt)
-3. ```1GHz_output.txt``` commited to repo (1pt)
-4. ```2GHz_output.txt``` commited to repo (1pt)
-5. ```1k_output.txt``` commited to repo (1pt)
-6. ```10k_output.txt``` commited to repo (1pt)
-7. ```20k_output.txt``` commited to repo (1pt)
-5. Answer question in write up and submit to Gradescope (5 pts)
+1. `local-output.txt` commited to repo (1pt)
+2. `1000-MHz-stats.csv` commited to repo (1pt)
+3. Completed write up submitted on Gradescope (5pt)
