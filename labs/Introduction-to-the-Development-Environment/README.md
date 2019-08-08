@@ -88,7 +88,7 @@ After logging into ieng6 it should look something like this:
 
 You can then clone your repo in the directory that you land in and work on it.
 
-__VERY IMPORTANT:__ Make sure to commit and push your changes before you exit the development environment. Unlike running on your local machine, there is no garuntee that your files will stick around the next time you log in.
+__VERY IMPORTANT: Make sure to commit and push your changes before you exit the development environment. Unlike running on your local machine, there is no garuntee that your files will stick around the next time you log in.__
 
 ### Get a Copy of the Starter Code
 
