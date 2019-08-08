@@ -20,7 +20,7 @@ Skills to Learn
 
 1. A computer with Docker installed (either the cloud docker container via ssh, or your own laptop).
 2. The [starter repo](https://classroom.github.com/a/w0TawKC9) for this lab (Don't clone it until the start of class, last minute changes are likely).
-3. The contents of the class materials Github repo: https://github.com/NVSL/CSE141pp_Resources
+3. The contents of the class materials Github repo: https://github.com/NVSL/CSE141pp-Resources
 
 ## Tasks to Perform
 
