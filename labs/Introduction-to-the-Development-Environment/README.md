@@ -54,6 +54,42 @@ https://docs.docker.com/get-started/
 
 Take a screenshot of the command line output of the `docker run hello-world` step of the tutorial.
 
+### (Alternately) Log into the Schools Cloud for Docker
+
+If you are having trouble installing Docker on your own computer, you can instead run it on the schools machines using these steps:
+
+Login to 'ieng6.ucsd.edu' (our primary student Linux SSH server) using you normal student login.
+
+Run the command `cse141s219` to prep the system.
+
+Run the command `launch-141` to connect to a remote Docker container running the development environment image.
+
+After logging into ieng6 it should look something like this:
+```
+    [...]
+    To begin work for one of your courses [ cs141s219 ], type its name 
+    at the command prompt.  (For example, "cs141s219", without the quotes).
+
+    To see all available software packages, type "prep -l" at the command prompt,
+    or "prep -h" for more options.
+    [agt@ieng6-202]:~:462$ cs141s219
+    Wed Aug 07, 2019 11:46am - Prepping cs141s219
+    [agt@ieng6-202]:~:19$ launch-141
+    Attempting to create job ('pod') with 4 CPU cores, 16 GB RAM, and 0 GPU units.
+       (Adjust command line options, or edit "/home/linux/ieng6/cs141s219/public/bin/launch-141" to change this configuration.)
+    pod "agt-21229" created
+    Wed Aug 7 11:46:19 PDT 2019 starting up - pod status: Pending ; 
+    Wed Aug 7 11:46:25 PDT 2019 pod is running with IP: 10.47.192.3 on node: its-dsmlp-n25.ucsd.edu
+    devonmerrill/cse141l-development-environment:latest is now active.
+
+    Connected to agt-21229; type 'exit' to terminate pod/processes.
+    agt@agt-21229:~$ 
+```
+
+You can then clone your repo in the directory that you land in and work on it.
+
+__VERY IMPORTANT:__ Make sure to commit and push your changes before you exit the development environment. Unlike running on your local machine, there is no garuntee that your files will stick around the next time you log in.
+
 ### Get a Copy of the Starter Code
 
 First, accept the assignement on Github Classroom: https://classroom.github.com/a/XwRB7jHX
@@ -134,7 +170,7 @@ We will look at your repo and code.
 
 Checklist:
 
-1. Output of Docker "Hello World" tutorial (commited to your repo as `docker-hello-world.txt`) (1 pt)
+1. Output of Docker "Hello World" tutorial (commited to your repo as `docker-hello-world.txt`) (0 pt, optional but highly recommended)
 2. Output file of starter code local run (commited to your repo as `submission/starter-output.txt`) (1 pt)
 3. Output file of instrumentation script cloud run (commited to your repo as `submission/reference-code-stats.csv`) (1 pt)
 
