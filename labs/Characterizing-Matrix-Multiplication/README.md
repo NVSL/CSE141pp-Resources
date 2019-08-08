@@ -19,7 +19,7 @@ Skills to Learn
 ## Software You Will Need
 
 1. A computer with Docker installed (either the cloud docker container via ssh, or your own laptop).
-2. The [starter repo]() for this lab (Don't clone it until the start of class, last minute changes are likely).
+2. The [starter repo](https://classroom.github.com/a/w0TawKC9) for this lab (Don't clone it until the start of class, last minute changes are likely).
 3. The contents of the class materials Github repo: https://github.com/NVSL/CSE141pp_Resources
 
 ## Tasks to Perform
@@ -30,7 +30,7 @@ Fork the starter repo for this lab.
 
 ### Run the Stater Code Locally and Verify the Output
 
-First, accept the assignement on Github Classroom: https://classroom.github.com/a/XwRB7jHX
+First, accept the assignement on Github Classroom: https://classroom.github.com/a/w0TawKC9
 
 This will set you up with a copy of the starter repository.
 
