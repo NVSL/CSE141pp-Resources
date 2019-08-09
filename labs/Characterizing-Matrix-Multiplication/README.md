@@ -65,7 +65,7 @@ Save the ouput as `local-output.txt` in the root of your repo and commit and pus
 
 Take a look at the file `config` in the root of the repo.
 
-This file let you change how the code will be built and run on the reference processor.
+This file lets you change how the code will be built and run on the reference processor.
 
 Change the MHz option to `1000` and commit and push the change.
 
