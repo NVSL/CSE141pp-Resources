@@ -52,9 +52,13 @@ In the `submission` directory, run make. This should produce `code.exe` as you s
 Take a look at `lab.make` in the root of the repo. This is the make file used when your repo is run on the reference processor. It indicates the command line arguments that will be passed during the reference run:
 `CMD_LINE_ARGS=--engine papi --stat PAPI_L2_STM --stat rapl:::PACKAGE_ENERGY:PACKAGE0 --mat-small 96 --mat-large 768 --iterations 5`.
 
+The arguments `--engine papi --stat PAPI_L2_STM --stat rapl:::PACKAGE_ENERGY:PACKAGE0` are used on the reference processor to measure cache and energy information. Don't use them locally.
+
 These arguments are parsed by `lab_files/main.cpp`.
 
-Run a single execution of `code.exe` with command line arguments to run 10 iterations of matrix multiply on two 32x32, 64x64, and 128x128 matricies. Save the ouput as `local-output.txt` in the root of your repo and commit and push the file.
+Run a single execution of `code.exe` with command line arguments to run 10 iterations of matrix multiply on two 32x32, 64x64, and 128x128 matricies. The command line arguments to do this look like `--mat-small 32 --mat-large 128 --iterations 10`.
+
+Save the ouput as `local-output.txt` in the root of your repo and commit and push the file.
 
 
 ### Running at 1 GHz
