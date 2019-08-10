@@ -58,7 +58,7 @@ These arguments are parsed by `lab_files/main.cpp`.
 
 Run a single execution of `code.exe` with command line arguments to run 10 iterations of matrix multiply on two 32x32, 64x64, and 128x128 matricies. The command line arguments to do this look like `--mat-small 32 --mat-large 128 --iterations 10`.
 
-Save the ouput as `local-output.txt` in the root of your repo and commit and push the file.
+Save the stdout and stderr ouput (the text printed to the command line) as `local-output.txt` in the root of your repo and commit and push the file.
 
 
 ### Running at 1 GHz
