@@ -35,7 +35,7 @@ The results of floating-point math can change with the order that operations are
 
 ### Start Unrolling!
 
-Read through the lab write up. You will need to do some specific type of unrolling to complete it.
+Read through the lab write-up. You will need to do some specific type of unrolling to complete it.
 
 For each type of unrolling follow these steps: 
 1. Modify `sqmm()`
@@ -44,6 +44,8 @@ For each type of unrolling follow these steps:
 4. Save the output of `submission/code-stats.csv` with a reasonable name and push to your repo. This is your data for the write-up.
 
 ### Make it Fast
+
+Questions 1 and 2  of the write-up ask for specific types of unrolling. Questions 3 and 4 ask for your fastest solution.
 
 You should try to make `sqmm()` as fast as possible using unrolling. You must beat Devon and Justin's submissions on the Gradescope leader board in execution time for full credit. Your final submission to Gradescope should be your fastest code.
 
@@ -60,7 +62,7 @@ We will look at your repo and code.
 
 Checklist:
 
-1. Submit completed write up on Gradescope (14pts)
+1. Submit completed write-up on Gradescope (14pts)
 2. Beat Devon's submission on the Gradescope leaderboard (1pt)
 3. Beat Justin's submission on the Gradescope leaderboard (1pt)
 
