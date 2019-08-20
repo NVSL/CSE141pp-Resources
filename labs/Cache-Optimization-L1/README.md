@@ -18,7 +18,7 @@ Skills to Learn
 ## Software You Will Need
 
 1. A computer with Docker installed (either the basement CSE labs or your own laptop).
-2. The [starter repo] for this lab. (Don't clone it until the start of class, last-minute changes are likely.)
+2. The [starter repo](https://classroom.github.com/g/MdSR3PxV) for this lab. (Don't clone it until the start of class, last-minute changes are likely.)
 3. The contents of the class materials Github repo: https://github.com/NVSL/CSE141pp_Resources
 
 ## Tasks to Perform
