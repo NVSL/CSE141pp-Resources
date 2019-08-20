@@ -49,7 +49,7 @@ For each type of blocking follow these steps:
 
 ### Make it Fast
 
-Questions 1 and 2  of the write-up ask for specific types of blocking. Questions 3 and 4 ask for your fastest solution.
+Questions 1, 2, and 3  of the write-up ask for specific types of blocking. Questions 4 and 5 ask for your fastest solution.
 You should try to make `sqmm()` as fast as possible using blocking. You may also using blocking combined with manual loop unrolling.
 
 You must beat Devon and Justin's submissions on the Gradescope leader board in __L1 Cache Misses__ for full credit. Your final submission to Gradescope should be your code that has the lowest __L1 Cache Misses__.
