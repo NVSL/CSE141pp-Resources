@@ -28,7 +28,7 @@ The slides for each lab are in the directory with the lab description.
 0. [Introduction to the Development Environment](https://github.com/NVSL/CSE141pp-Resources/tree/master/labs/Introduction-to-the-Development-Environment)
 1. [Charactering Matrix Multiplication](https://github.com/NVSL/CSE141pp-Resources/tree/master/labs/Characterizing-Matrix-Multiplication)
 2. [Loop Unrolling](https://github.com/NVSL/CSE141pp-Resources/tree/master/labs/Unrolling-Loops-and-Branch-Prediction)
-3. [L1 Cache Optimization]
+3. [L1 Cache Optimization](https://github.com/NVSL/CSE141pp-Resources/blob/master/labs/Cache-Optimization-L1)
 4. [L2 and L3 Cache Optimization]
 5. [Multicore]
 6. [Vectors]
