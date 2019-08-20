@@ -67,7 +67,7 @@ We will look at your repo and code.
 
 Checklist:
 
-1. Submit completed write-up on Gradescope (14pts)
+1. Submit completed write-up on Gradescope (15pts)
 2. Beat Devon's submission on the Gradescope leaderboard (1pt)
 3. Beat Justin's submission on the Gradescope leaderboard (1pt)
 
