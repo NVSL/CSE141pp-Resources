@@ -1,6 +1,6 @@
 # CSE 141L (refocused)
 
-!(Gene Amdahl)[images/gene.jpg]
+![Gene Amdahl](images/gene.jpg)
 
 Welcome to CSE 141L Introduction to Computer Architecture Lab.
 
