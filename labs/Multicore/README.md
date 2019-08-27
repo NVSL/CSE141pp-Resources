@@ -33,7 +33,7 @@ You will be modifying the function `sqmm()` in `submission/code.c`.
 
 You will need to perform the same calculation in `sqmm()`, but you will change the control and operations to improve execution time.
 
-An example of openmp parallelization is in `submission/code.c'. It calculates vector dot product using parallelization. You can use it as an example when you parallelize `sqmm()`.
+An example of openmp parallelization is in `submission/code.c`. It calculates vector dot product using parallelization. You can use it as an example when you parallelize `sqmm()`.
 
 The results of floating-point math can change with the order that operations are applied. Don't worry about these small discrepancies. Optionally see `main.cpp` to see how this is accounted for.
 
