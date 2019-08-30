@@ -32,4 +32,4 @@ The slides for each lab are in the directory with the lab description.
 2. [Loop Unrolling](https://github.com/NVSL/CSE141pp-Resources/tree/master/labs/Unrolling-Loops-and-Branch-Prediction)
 3. [Cache Optimization](https://github.com/NVSL/CSE141pp-Resources/blob/master/labs/Cache-Optimization-L1)
 4. [Multicore](https://github.com/NVSL/CSE141pp-Resources/blob/master/labs/Multicore/README.md)
-5. [Gotta Go Fast]
+5. [Gotta Go Fast](https://github.com/NVSL/CSE141pp-Resources/tree/master/labs/Make-It-Fast)
