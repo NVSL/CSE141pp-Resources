@@ -80,7 +80,7 @@ After logging into ieng6 it should look something like this:
     pod "agt-21229" created
     Wed Aug 7 11:46:19 PDT 2019 starting up - pod status: Pending ; 
     Wed Aug 7 11:46:25 PDT 2019 pod is running with IP: 10.47.192.3 on node: its-dsmlp-n25.ucsd.edu
-    devonmerrill/cse141l-development-environment:latest is now active.
+    stevenjswanson/cse141pp:latest:latest is now active.
 
     Connected to agt-21229; type 'exit' to terminate pod/processes.
     agt@agt-21229:~$ 
@@ -106,7 +106,7 @@ There is also a Makefile in submission that you will use to build the code. You 
 
 ### Test the Starter Code Locally
 
-Before building the code locally, you must start the development environment Docker container (devonmerrill/cse141l-development-environment).
+Before building the code locally, you must start the development environment Docker container (stevenjswanson/cse141pp:latest).
 
 You will want to mount your repo as a volume in the container using the --volume option.
 
@@ -114,11 +114,11 @@ The full command to start the Docker container looks something like this:
 ```
 docker run -it \
 --volume ~/lab-0-intro-to-the-development-environment-djmerrill:/runner/lab-0-intro-to-the-development-environment-djmerrill \
-devonmerrill/cse141l-development-environment
+stevenjswanson/cse141pp:latest
 ```
 You might want to save this as a script for easy reuse. If you didn't clone the repo into your Unix home directory, you will have to change this command.
 
-This will start the Docker image (devonmerrill/cse141l-development-environment) in a container in interactive mode (`-i`) and give you access to a terminal (`-t`).
+This will start the Docker image (`stevenjswanson/cse141pp:latest`) in a container in interactive mode (`-i`) and give you access to a terminal (`-t`).
 
 The lab repo will be mounted in the container at `/runner/CSE141pp_Introduction-to-the-Development-Environment`.
 
