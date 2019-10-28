@@ -1,3 +1,7 @@
+# TODOs
+
+1.  Update links on this page to point to the repos rather than the readmes.
+
 # CSE 141L (refocused)
 
 ![Gene Amdahl](images/gene.jpg)
