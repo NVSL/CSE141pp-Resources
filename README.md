@@ -1,6 +1,7 @@
 # TODOs
 
 1.  Update links on this page to point to the repos rather than the readmes.
+2.  Update links and link text to point to  ML-themed labs
 
 # CSE 141L (refocused)
 
