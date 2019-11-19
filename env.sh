@@ -1,0 +1,3 @@
+
+export COURSE_RESOURCES_ROOT=$PWD
+PATH=$PWD/bin:$PATH
