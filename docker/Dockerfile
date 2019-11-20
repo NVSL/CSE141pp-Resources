@@ -24,6 +24,7 @@ RUN add-apt-repository ppa:jonathonf/python-3.6
 RUN add-apt-repository ppa:ubuntu-toolchain-r/test
 
 RUN apt-get update --fix-missing
+RUN apt-get update --fix-missing
 
 RUN apt-get install -y kmod less git emacs gcc make g++ sysfsutils cpufrequtils numactl lshw dmidecode build-essential acpid linux-tools-generic lm-sensors gdb msr-tools libc6-dev-i386 vim libboost-all-dev curl gfortran clang graphviz  python3-pip python-dev build-essential docker.io man libjpeg-dev unzip libpng-dev cmake 
 
@@ -50,23 +51,23 @@ RUN pip3 install --upgrade virtualenv
 RUN git clone https://github.com/google/googletest.git
 RUN (cd googletest;  cmake CMakeLists.txt; make)
 ENV GOOGLE_TEST_ROOT /googletest
-RUN (git clone https://github.com/bats-core/bats-core.git; cd bats; ./install.sh /usr/local)
+RUN (git clone https://github.com/bats-core/bats-core.git; cd bats-core; ./install.sh /usr/local)
 
 # Our software
-RUN (git clone https://github.com/NVSL/cse141pp-archlab.git ) 
-RUN (cd cse141pp-archlab/; make install-prereqs;)
-RUN (cd cse141pp-archlab/; . ./env.sh; git pull; make) # redooo
-RUN (cd cse141pp-archlab/archcloud; pip3 install -e .)
-ENV ARCHLAB_ROOT /cse141pp-archlab
-
-ENV PATH "$ARCHLAB_ROOT/tools:$ARCHLAB_ROOT/utils:$PATH"
-			
-RUN (git clone https://github.com/NVSL/CSE141pp-SimpleCNN.git)
-RUN (cd CSE141pp-SimpleCNN; make datasets test)
-ENV CANELA_ROOT /CSE141pp-SimpleCNN
+RUN mkdir -p /course/config
+ARG GITHUB_OAUTH_TOKEN
+RUN (cd /tmp; git clone https://${GITHUB_OAUTH_TOKEN}@github.com/NVSL/CSE141pp-Config.git /course/config) #redu
+# this checks out everything
+RUN (cd /course/; export INJECT_OAUTH=y; export GITHUB_OAUTH_TOKEN=${GITHUB_OAUTH_TOKEN}; ./config/setup.sh; )
+RUN (cd /course/cse141pp-archlab/; make install-prereqs;)
+RUN (cd /course/cse141pp-archlab; make)
+RUN (cd /course/cse141pp-archlab/archcloud; pip3 install -e .)
+RUN (cd /course/CSE141pp-SimpleCNN; make datasets test)
 
 ENV IN_DOCKER yes
 
 RUN mkdir /runner/
 WORKDIR /runner/
+
+
 

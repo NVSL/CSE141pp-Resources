@@ -1,2 +1,2 @@
 docker: Dockerfile
-	docker build -t cse141pp/submission-runner .
+	docker build -t $(DOCKER_IMAGE) --build-arg GITHUB_OAUTH_TOKEN=$(GITHUB_OAUTH_TOKEN) .
