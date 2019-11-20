@@ -56,9 +56,9 @@ RUN (git clone https://github.com/bats-core/bats-core.git; cd bats-core; ./insta
 # Our software
 RUN mkdir -p /course/config
 ARG GITHUB_OAUTH_TOKEN
-RUN (cd /tmp; git clone https://${GITHUB_OAUTH_TOKEN}@github.com/NVSL/CSE141pp-Config.git /course/config) #redu
+RUN (git clone https://${GITHUB_OAUTH_TOKEN}@github.com/NVSL/CSE141pp-Config.git /course/config) #redoo
 # this checks out everything
-RUN (cd /course/; export INJECT_OAUTH=y; export GITHUB_OAUTH_TOKEN=${GITHUB_OAUTH_TOKEN}; ./config/setup.sh; )
+RUN (cd /course/; . ./config; export INJECT_OAUTH=y; ./config/setup.sh; )
 RUN (cd /course/cse141pp-archlab/; make install-prereqs;)
 RUN (cd /course/cse141pp-archlab; make)
 RUN (cd /course/cse141pp-archlab/archcloud; pip3 install -e .)
