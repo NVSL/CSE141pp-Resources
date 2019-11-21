@@ -54,20 +54,24 @@ ENV GOOGLE_TEST_ROOT /googletest
 RUN (git clone https://github.com/bats-core/bats-core.git; cd bats-core; ./install.sh /usr/local)
 
 # Our software
-RUN mkdir -p /course/config
+RUN mkdir -p /course/
 ARG GITHUB_OAUTH_TOKEN
-RUN (git clone https://${GITHUB_OAUTH_TOKEN}@github.com/NVSL/CSE141pp-Config.git /course/config) #redoo
+ARG CONFIG_REPO_ROOT_NAME
+RUN (cd course; git clone https://${GITHUB_OAUTH_TOKEN}@github.com/NVSL/${CONFIG_REPO_ROOT_NAME}.git;) #redooooooo0oo
 # this checks out everything
-RUN (cd /course/; . ./config; export INJECT_OAUTH=y; ./config/setup.sh; )
-RUN (cd /course/cse141pp-archlab/; make install-prereqs;)
-RUN (cd /course/cse141pp-archlab; make)
-RUN (cd /course/cse141pp-archlab/archcloud; pip3 install -e .)
-RUN (cd /course/CSE141pp-SimpleCNN; make datasets test)
+RUN  /bin/bash -c "(cd /course/; export INJECT_OAUTH_TOKEN=y; ./${CONFIG_REPO_ROOT_NAME}/setup.sh ${CONFIG_REPO_ROOT_NAME};)"
+RUN  /bin/bash -c "(cd /course/${CONFIG_REPO_ROOT_NAME}; . ./config.sh; cd ../cse141pp-archlab; make install-prereqs;)"
+RUN  /bin/bash -c "(cd /course/${CONFIG_REPO_ROOT_NAME}; . ./config.sh; cd ../cse141pp-archlab; make)"
+RUN  /bin/bash -c "(cd /course/${CONFIG_REPO_ROOT_NAME}; . ./config.sh; cd ../cse141pp-archlab/archcloud; pip3 install -e .)"
+RUN  /bin/bash -c "(cd /course/${CONFIG_REPO_ROOT_NAME}; . ./config.sh; cd ../CSE141pp-SimpleCNN; make datasets test)"
 
+RUN  /bin/bash -c "(cd /course/${CONFIG_REPO_ROOT_NAME}; . ./config.sh; cd ../cse141pp-archlab/archcloud; git pull; pip3 install -e .)" d
+
+ARG CONFIG_REPO_ROOT
+ENV CONFIG_REPO_ROOT_NAME ${CONFIG_REPO_ROOT_NAME}
 ENV IN_DOCKER yes
 
-RUN mkdir /runner/
-WORKDIR /runner/
+WORKDIR /course
 
 
 
