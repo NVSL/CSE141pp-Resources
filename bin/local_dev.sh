@@ -1,6 +1,12 @@
-V=0.10
+#!/usr/bin/env bash
 
-docker pull $DOCKER_IMAGE
+if [ "$1." != "." ]; then
+    IMAGE=$1
+else
+    IMAGE=$DOCKER_DEVEL_IMAGE
+fi
+    
+docker pull $IMAGE
 
 docker run -it \
        --volume $HOME:$HOME \
@@ -11,4 +17,4 @@ docker run -it \
        -e PS1='${HOSTNAME}:$PWD ' \
        --hostname $(hostname)-DOCKER \
        -w $HOME \
-       $DOCKER_IMAGE
+       $IMAGE
