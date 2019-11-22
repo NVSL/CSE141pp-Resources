@@ -2,8 +2,9 @@
 
 1.  Update links on this page to point to the repos rather than the readmes.
 2.  Update links and link text to point to  ML-themed labs
+3.  Update course web page.
 
-# CSE 141L (refocused)
+# CSE 141L Reloaded
 
 ![Gene Amdahl](images/gene.jpg)
 
@@ -13,28 +14,29 @@ This repo serves an the homepage for the course labs.  It contains all
 the lab write ups and several resources you will use throughout the
 course.
 
-* `labs` has all the labs.  The write ups reference the starter repos they use.
-
 Please see the course home page (piazza.com/ucsd/summer2019/cse141lb) for schedule, due dates, and other logistical issues.
-
 
 ## Overview
 
-We are going to optimize code to take advantage of architectural features of modern microprocessors. Along the way we will learn how to use several tools that will help.
+We are going to optimize code to take advantage of architectural
+features of modern microprocessors. Along the way we will learn how to
+use several tools that will help.
 
-The goals for the course are for you to learn how to test, profile, and optimize functions in C code, with a mind towards the pipeline and cache.  
+The goals for the course are for you to learn how to test, profile,
+and optimize functions in C code, with a mind towards the pipeline and
+cache.
 
 ## Labs 
 
 There are 8 labs.  Deadlines are on the course homepage.
 
-The slides for each lab are in the directory with the lab description.
+The slides for each lab are in the `slides` directory.
 
-### Labs
+Each lab lives in it's own git repo.  Here they are (if the link is dead, that's because the lab hasn't been assigned yet):
 
-0. [Introduction to the Development Environment](https://github.com/NVSL/CSE141pp-Resources/tree/master/labs/Introduction-to-the-Development-Environment)
-1. [Charactering Matrix Multiplication](https://github.com/NVSL/CSE141pp-Resources/tree/master/labs/Characterizing-Matrix-Multiplication)
-2. [Loop Unrolling](https://github.com/NVSL/CSE141pp-Resources/tree/master/labs/Unrolling-Loops-and-Branch-Prediction)
-3. [Cache Optimization](https://github.com/NVSL/CSE141pp-Resources/blob/master/labs/Cache-Optimization-L1)
+0. [Introduction to the Development Environment](https://github.com/NVSL/CSE141pp-Resources/tree/master/labs/Introduction-to-the-Development-Environment/README.md)
+1. [Charactering Matrix Multiplication](https://github.com/NVSL/CSE141pp-Resources/tree/master/labs/Characterizing-A-Preceptron/README.md)
+2. [Loop Unrolling](https://github.com/NVSL/CSE141pp-Resources/tree/master/labs/Loop-Unrolling/README.md)
+3. [Cache Optimization](https://github.com/NVSL/CSE141pp-Resources/blob/master/labs/Cache-Optimization-L1/README.md)
 4. [Multicore](https://github.com/NVSL/CSE141pp-Resources/blob/master/labs/Multicore/README.md)
-5. [Gotta Go Fast](https://github.com/NVSL/CSE141pp-Resources/tree/master/labs/Make-It-Fast)
+5. [Gotta Go Fast](https://github.com/NVSL/CSE141pp-Resources/tree/master/labs/Make-It-Fast/README.md)
