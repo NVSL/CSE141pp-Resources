@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+if [ "$1." != "." ]; then
+    IMAGE=$1
+else
+    IMAGE=stevenjswanson/cse141pp:latest
+fi
+    
+docker pull $IMAGE
+
+docker run -it \
+       --volume $HOME:$HOME \
+       -e HOME=$HOME \
+       --hostname $(hostname)-cse141L \
+       -w $HOME \
+       $IMAGE
