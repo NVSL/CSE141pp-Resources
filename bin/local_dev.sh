@@ -1,5 +1,7 @@
 V=0.10
 
+docker pull $DOCKER_IMAGE
+
 docker run -it \
        --volume $HOME:$HOME \
        --volume /tmp:/tmp \
