@@ -1,5 +1,4 @@
 ARG DEV_REPO
 ARG CONFIG_REPO_ROOT_NAME
 FROM ${DEV_REPO} 
-
-RUN  /bin/bash -c "(cd /course/${CONFIG_REPO_ROOT_NAME}; git pull; . ./config.sh; cleanse-system)" #aoeuaaa
+RUN  /bin/bash -c "(cd /course/${CONFIG_REPO_ROOT_NAME}; git pull; . ./config.sh; cleanse-system)"
