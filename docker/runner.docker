@@ -1,6 +1,0 @@
-ARG STUDENT_REPO
-ARG CONFIG_REPO_ROOT_NAME
-FROM ${STUDENT_REPO}
-RUN mkdir -p /runner
-RUN (cd /course/CSE141pp-Resources; git pull)
-ENTRYPOINT ["/course/CSE141pp-Resources/bin/run_configured.sh"]
